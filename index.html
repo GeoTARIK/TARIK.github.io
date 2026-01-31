@@ -12,6 +12,18 @@
       https://geotarik.github.io/TARIK.github.io/
     -->
     <script type="module" crossorigin src="./index-CXnLibr5.js"></script>
+  <!-- Override social link href after the app initializes. The React app sets
+       placeholder URLs for social media icons. This script updates the
+       LinkedIn link to point to the actual profile. -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Find the anchor element for LinkedIn by its aria-label
+      var link = document.querySelector('a[aria-label="LinkedIn"]');
+      if (link) {
+        link.setAttribute('href', 'https://www.linkedin.com/in/tarik-solomon-teshome-836a021a4/');
+      }
+    });
+  </script>
     <link rel="stylesheet" crossorigin href="./index-B-d92w8Y.css">
   </head>
   <body>
